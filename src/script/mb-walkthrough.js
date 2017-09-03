@@ -19,7 +19,8 @@ export default class Walkthrough extends React.Component {
       animated: PropTypes.bool,
       animationDuration: PropTypes.number,
       showBackdrop: PropTypes.bool,
-      showIndicator: PropTypes.bool
+      showIndicator: PropTypes.bool,
+      topSpace: PropTypes.number
     }
   }
 
@@ -33,7 +34,8 @@ export default class Walkthrough extends React.Component {
       animated: true,
       animationDuration: 200,
       showBackdrop: true,
-      showIndicator: true
+      showIndicator: true,
+      topSpace: 100
     }
   }
 
@@ -103,7 +105,8 @@ export default class Walkthrough extends React.Component {
 
     const modalStyle = {
       width: `${width}px`,
-      height: `${height}px`
+      height: `${height}px`,
+      marginTop: `${this.props.topSpace}px`
     }
 
     const containerStyle = {

@@ -1,6 +1,5 @@
 
 $walkthrough-backdrop-color: #4a4b53;
-$walkthrough-top-space: 110px;
 $walkthrough-footer-height: 100px;
 $primary-color: #3e87f4;
 
@@ -36,8 +35,9 @@ $primary-color: #3e87f4;
 }
 
 .walkthrough-modal {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  margin: $walkthrough-top-space auto 0;
   text-align: center;
   overflow: hidden;
   border-radius: 3px;

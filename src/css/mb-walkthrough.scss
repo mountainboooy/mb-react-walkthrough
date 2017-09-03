@@ -13,12 +13,14 @@ $primary-color: #3e87f4;
   &:focus {
     background: none;
     outline: none;
+
+
   }
 }
 
 .walkthrough-backdrop {
   top: 0;
-  right: 0;
+  right:   0;
   left: 0;
   bottom: 0;
   position: fixed;

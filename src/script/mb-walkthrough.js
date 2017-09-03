@@ -62,12 +62,12 @@ export default class Walkthrough extends React.Component {
     }
   }
 
-  onClickBack (e) {
+  onClickBack () {
     if (this.state.page <= 0) return
     this.updatePage(this.state.page - 1)
   }
 
-  onClickNext (e) {
+  onClickNext () {
     const maxPage = this.props.children.length - 1
     if (this.state.page >= maxPage) {
       this.props.onHide()

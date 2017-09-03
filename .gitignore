@@ -64,4 +64,5 @@ bower_components
 
 dist/
 .DS_Store
+.eslintrc.json
 

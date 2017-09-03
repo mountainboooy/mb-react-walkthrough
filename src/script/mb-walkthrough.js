@@ -12,6 +12,7 @@ export default class Walkthrough extends React.Component {
       onHide: PropTypes.func.isRequired,
       onClickBackdrop:PropTypes.func,
       onSlide: PropTypes.func,
+      onShow: PropTypes.func,
       nextBtnTitle: PropTypes.string,
       backBtnTitle: PropTypes.string,
       CloseBtntitle: PropTypes.string,
@@ -47,6 +48,12 @@ export default class Walkthrough extends React.Component {
 
     this.state = {
       page: 0
+    }
+  }
+
+  componentDidMount () {
+    if (this.props.onShow) {
+      this.props.onShow()
     }
   }
 

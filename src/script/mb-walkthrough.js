@@ -37,7 +37,8 @@ export default class Walkthrough extends React.Component {
       'onClickBack',
       'onClickNext',
       'onClickIndicator',
-      'onClickBackdrop'
+      'onClickBackdrop',
+      'onClickModal'
     ])
 
     this.state = {
@@ -45,12 +46,12 @@ export default class Walkthrough extends React.Component {
     }
   }
 
-  onClickBack () {
+  onClickBack (e) {
     if (this.state.page <= 0) return
     this.updatePage(this.state.page - 1)
   }
 
-  onClickNext () {
+  onClickNext (e) {
     const maxPage = this.props.children.length - 1
     if (this.state.page >= maxPage) {
       this.props.onHide()
@@ -67,6 +68,10 @@ export default class Walkthrough extends React.Component {
     if (this.props.onClickBackdrop) {
       this.props.onClickBackdrop()
     }
+  }
+
+  onClickModal (e) {
+    e.stopPropagation()
   }
 
   updatePage (page) {
@@ -110,7 +115,7 @@ export default class Walkthrough extends React.Component {
     return (
       <div className={cx('walkthrough', this.props.className)}>
         <div className='walkthrough-backdrop' onClick={this.onClickBackdrop}>
-          <div className='walkthrough-modal' style={modalStyle}>
+          <div className='walkthrough-modal' style={modalStyle} onClick={this.onClickModal}>
             <div className={cx('walkthrough-container', {'animated': this.props.animated})} style={containerStyle}>
               {
                 this.props.children.map(function (val, index) {

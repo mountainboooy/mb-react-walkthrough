@@ -62,8 +62,6 @@ typings/
 # Dependency directory
 bower_components
 
-./src/dist/
-./example/src/dist/
-
+dist/
 .DS_Store
 

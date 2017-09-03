@@ -117,6 +117,11 @@ $primary-color: #3e87f4;
 
   .walkthrough-page-indicator {
     text-align: center;
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+    }
 
     > button {
       @include unstyled-button;

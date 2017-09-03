@@ -25,6 +25,7 @@ class ExampleWalkthrough extends React.Component {
         onClickBackdrop={()=>{alert('takeru')}}
         animationDuration={1000}
         onShow={()=>{alert('show')}}
+        showIndicator={false}
         >
         <MBWalkthrough.Content>
           1

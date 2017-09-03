@@ -18,7 +18,8 @@ export default class Walkthrough extends React.Component {
       CloseBtntitle: PropTypes.string,
       animated: PropTypes.bool,
       animationDuration: PropTypes.number,
-      showBackdrop: PropTypes.bool
+      showBackdrop: PropTypes.bool,
+      showIndicator: PropTypes.bool
     }
   }
 
@@ -31,7 +32,8 @@ export default class Walkthrough extends React.Component {
       closeBtnTitle: 'Close',
       animated: true,
       animationDuration: 200,
-      showBackdrop: true
+      showBackdrop: true,
+      showIndicator: true
     }
   }
 
@@ -151,7 +153,7 @@ export default class Walkthrough extends React.Component {
                 onClick={this.onClickBack}>
                 {this.props.backBtnTitle}
               </button>
-              <div className='walkthrough-page-indicator'>
+              <div className={cx('walkthrough-page-indicator', {'show': this.props.showIndicator})}>
                 {indicators}
               </div>
               <button

@@ -21,9 +21,13 @@ $primary-color: #3e87f4;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba($walkthrough-backdrop-color, .85);
   position: fixed;
   z-index: 1000;
+  background: transparent;
+
+  &.show {
+    background: rgba($walkthrough-backdrop-color, .85);
+  }
 
   * {
     box-sizing: border-box;

@@ -16,7 +16,8 @@ export default class Walkthrough extends React.Component {
       backBtnTitle: PropTypes.string,
       CloseBtntitle: PropTypes.string,
       animated: PropTypes.bool,
-      animationDuration: PropTypes.number
+      animationDuration: PropTypes.number,
+      showBackdrop: PropTypes.bool
     }
   }
 
@@ -28,7 +29,8 @@ export default class Walkthrough extends React.Component {
       backBtnTitle: 'Back',
       closeBtnTitle: 'Close',
       animated: true,
-      animationDuration: 200
+      animationDuration: 200,
+      showBackdrop: true
     }
   }
 
@@ -121,8 +123,9 @@ export default class Walkthrough extends React.Component {
     })
 
     return (
-      <div className={cx('walkthrough', this.props.className)}>
-        <div className='walkthrough-backdrop' onClick={this.onClickBackdrop}>
+      <div className={cx('walkthrough', this.props
+      .className)}>
+        <div className={cx('walkthrough-backdrop', {'show': this.props.showBackdrop})} onClick={this.onClickBackdrop}>
           <div className='walkthrough-modal' style={modalStyle} onClick={this.onClickModal}>
             <div className='walkthrough-container' style={containerStyle}>
               {

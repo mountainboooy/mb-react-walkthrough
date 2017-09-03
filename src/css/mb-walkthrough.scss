@@ -1,0 +1,141 @@
+
+$walkthrough-backdrop-color: #4a4b53;
+$walkthrough-top-space: 110px;
+$primary-color: #3e87f4;
+
+@mixin unstyled-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+
+  &:active,
+  &:focus {
+    background: none;
+    outline: none;
+  }
+}
+
+.walkthrough-backdrop {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba($walkthrough-backdrop-color, .85);
+  position: fixed;
+  z-index: 1000;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.walkthrough-modal {
+  position: relative;
+  margin: $walkthrough-top-space auto 0;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 8px 14px rgba(#000, .2);
+
+  .walkthrough-content-box {
+    float: left;
+  }
+
+  .walkthrough-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .walkthrough-container {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.animated {
+      transition: .2s;
+    }
+  }
+
+  .walkthrough-footer {
+    position: absolute;
+    padding: 30px 35px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+  }
+
+  .btn {
+    @include unstyled-button;
+  }
+
+  .btn-footer {
+    $btn-footer-height: 40px;
+    @include unstyled-button;
+    width: 95px;
+    height: $btn-footer-height;
+    line-height: $btn-footer-height;
+    font-size: 18px;
+    border-radius: $btn-footer-height / 2;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #858585;
+  }
+
+  .btn-next {
+    background: $primary-color;
+    color: #fff;
+    border-color: $primary-color;
+
+    &:hover {
+      background: darken($primary-color, .5);
+      border-color: darken($primary-color, .5);
+    }
+
+    &:focus,
+    &:active {
+      background: $primary-color;
+    }
+  }
+
+  .btn-back {
+
+    &.first-page {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background: rbga(#000, .2);
+    }
+  }
+
+  .walkthrough-page-indicator {
+    text-align: center;
+
+    > button {
+      @include unstyled-button;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+
+      .walkthrough-dot {
+        $page-indicator-size: 7px;
+        display: inline-block;
+        width: $page-indicator-size;
+        height: $page-indicator-size;
+        background: #ddd;
+        border-radius: $page-indicator-size / 2;
+
+        &.selected {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+}

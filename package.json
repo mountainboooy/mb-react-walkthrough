@@ -1,0 +1,38 @@
+{
+  "name": "mb-walkthrough",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/run-s build:**",
+    "build:babel": "./node_modules/.bin/babel --plugins transform-react-jsx ./src/script --out-dir ./src/dist --presets es2015",
+    "build:css": "./node_modules/.bin/node-sass src/css/mb-walkthrough.scss src/dist/css/mb-walkthrough.css",
+    "watch": "./node_modules/.bin/watch 'npm run build' ./src/script/ ./src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mountainboooy/mb-walkthrough.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mountainboooy/mb-walkthrough/issues"
+  },
+  "homepage": "https://github.com/mountainboooy/mb-walkthrough#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "classnames": "^2.2.5",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
+    "watch": "^1.0.2"
+  }
+}

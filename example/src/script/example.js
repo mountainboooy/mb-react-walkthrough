@@ -21,12 +21,14 @@ class ExampleWalkthrough extends React.Component {
         height={200}
         nextBtnTitle='次へ'
         backBtnTitle='戻る'
-        closeBtnTitle='閉じる'>
-        <MBWalkthrough.Content>
-        1
-        </MBWalkthrough.Content>
+        closeBtnTitle='閉じる'
+        animated={false}
+        >
         <MBWalkthrough.Content>
           1
+        </MBWalkthrough.Content>
+        <MBWalkthrough.Content>
+          2
         </MBWalkthrough.Content>
 
       </MBWalkthrough>

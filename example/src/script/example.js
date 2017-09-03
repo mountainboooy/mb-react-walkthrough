@@ -15,7 +15,7 @@ class ExampleWalkthrough extends React.Component {
     if (!this.state.show) return null
 
     return (
-      <MBWalkthrough topSpace={400} onHide={()=>{this.setState({show: false})}}>
+      <MBWalkthrough onHide={()=>{this.setState({show: false})}}>
         <MBWalkthrough.Content>
           <div className='title'>
             PAGE 1

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mountainboooy/mb-walkthrough#readme",
   "dependencies": {
+    "bowser": "^1.7.3",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1"

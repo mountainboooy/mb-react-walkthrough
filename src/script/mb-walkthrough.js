@@ -2,6 +2,7 @@ import React from 'react'
 import {bindAll} from 'lodash'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
+import bowser from 'bowser'
 
 export default class Walkthrough extends React.Component {
   static get propTypes () {
@@ -98,15 +99,15 @@ export default class Walkthrough extends React.Component {
 
   render () {
     if (! this.props.children) return null
-    const amount = this.props.children.length // 全体のページ数
-    const page = this.state.page // 現在の表示ページ
-    const width = this.props.width // モーダル幅
-    const height = this.props.height // モーダル高
-
+    const amount = this.props.children.length
+    const page = this.state.page
+    const width = bowser.mobile ? window.innerWidth : this.props.width
+    const height = bowser.mobile ? window.innerHeight : this.props.height
+    const topSpace = bowser.mobile ? 0 : this.props.topSpace
     const modalStyle = {
       width: `${width}px`,
       height: `${height}px`,
-      marginTop: `${this.props.topSpace}px`
+      marginTop: `${topSpace}px`
     }
 
     const containerStyle = {

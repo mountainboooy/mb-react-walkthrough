@@ -61,3 +61,9 @@ typings/
 .idea
 # Dependency directory
 bower_components
+
+./src/dist/
+./example/src/dist/
+
+.DS_Store
+

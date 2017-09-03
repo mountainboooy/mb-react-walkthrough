@@ -15,25 +15,47 @@ class ExampleWalkthrough extends React.Component {
     if (!this.state.show) return null
 
     return (
-      <MBWalkthrough
-        onHide={()=>{this.setState({show: false})}}
-        width={400}
-        height={200}
-        nextBtnTitle='次へ'
-        backBtnTitle='戻る'
-        closeBtnTitle='閉じる'
-        onClickBackdrop={()=>{alert('takeru')}}
-        animationDuration={1000}
-        onShow={()=>{alert('show')}}
-        showIndicator={false}
-        >
+      <MBWalkthrough onHide={()=>{this.setState({show: false})}}>
         <MBWalkthrough.Content>
-          1
+          <div className='title'>
+            PAGE 1
+          </div>
+          <div className='desc'>
+            Hello! This is a sample sentence. Hello ! This is a sample sentence. Hello! This is...
+          </div>
         </MBWalkthrough.Content>
         <MBWalkthrough.Content>
-          2
+          <div className='title'>
+            PAGE 2
+          </div>
+          <div className='desc'>
+            Hello! This is a sample sentence. Hello ! This is a sample sentence. Hello! This is...
+          </div>
         </MBWalkthrough.Content>
-
+        <MBWalkthrough.Content>
+          <div className='title'>
+            PAGE 3
+          </div>
+          <div className='desc'>
+            Hello! This is a sample sentence. Hello ! This is a sample sentence. Hello! This is...
+          </div>
+        </MBWalkthrough.Content>
+        <MBWalkthrough.Content>
+          <div className='title'>
+            PAGE 4
+          </div>
+          <div className='desc'>
+            Hello! This is a sample sentence. Hello ! This is a sample sentence. Hello! This is...
+          </div>
+        </MBWalkthrough.Content>
+        <MBWalkthrough.Content>
+          <div className='title'>
+            PAGE 5
+          </div>
+          <div className='desc'>
+            Hello! This is a sample sentence. Hello ! This is a sample sentence. Hello! This is...
+          </div>
+        </MBWalkthrough.Content>
       </MBWalkthrough>
     )
   }

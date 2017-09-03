@@ -25,8 +25,8 @@ export default class Walkthrough extends React.Component {
 
   static get defaultProps () {
     return {
-      width: 500,
-      height: 400,
+      width: 450,
+      height: 360,
       nextBtnTitle: 'Next',
       backBtnTitle: 'Back',
       closeBtnTitle: 'Close',

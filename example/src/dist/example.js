@@ -53,7 +53,9 @@ var ExampleWalkthrough = function (_React$Component) {
           height: 200,
           nextBtnTitle: '\u6B21\u3078',
           backBtnTitle: '\u623B\u308B',
-          closeBtnTitle: '\u9589\u3058\u308B' },
+          closeBtnTitle: '\u9589\u3058\u308B',
+          animated: false
+        },
         _react2.default.createElement(
           _mbWalkthrough2.default.Content,
           null,
@@ -62,7 +64,7 @@ var ExampleWalkthrough = function (_React$Component) {
         _react2.default.createElement(
           _mbWalkthrough2.default.Content,
           null,
-          '1'
+          '2'
         )
       );
     }

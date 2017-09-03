@@ -30,7 +30,9 @@
   background: #fff;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; }
+
+.walkthrough-modal .walkthrough-container.animated {
   transition: .2s; }
 
 .walkthrough-modal .walkthrough-footer {

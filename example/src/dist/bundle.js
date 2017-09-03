@@ -21210,7 +21210,9 @@ var ExampleWalkthrough = function (_React$Component) {
           height: 200,
           nextBtnTitle: '\u6B21\u3078',
           backBtnTitle: '\u623B\u308B',
-          closeBtnTitle: '\u9589\u3058\u308B' },
+          closeBtnTitle: '\u9589\u3058\u308B',
+          animated: false
+        },
         _react2.default.createElement(
           _mbWalkthrough2.default.Content,
           null,
@@ -21219,7 +21221,7 @@ var ExampleWalkthrough = function (_React$Component) {
         _react2.default.createElement(
           _mbWalkthrough2.default.Content,
           null,
-          '1'
+          '2'
         )
       );
     }
@@ -38592,14 +38594,16 @@ var Walkthrough = function (_React$Component) {
     key: 'propTypes',
     get: function get() {
       return {
-        onHide: _propTypes2.default.func.isRequired,
+        className: _propTypes2.default.string,
         width: _propTypes2.default.number,
         height: _propTypes2.default.number,
-        className: _propTypes2.default.string,
+        onHide: _propTypes2.default.func.isRequired,
+        onClickBackdrop: _propTypes2.default.func,
         onSlide: _propTypes2.default.func,
         nextBtnTitle: _propTypes2.default.string,
         backBtnTitle: _propTypes2.default.string,
-        CloseBtntitle: _propTypes2.default.string
+        CloseBtntitle: _propTypes2.default.string,
+        animated: _propTypes2.default.bool
       };
     }
   }, {
@@ -38610,7 +38614,8 @@ var Walkthrough = function (_React$Component) {
         height: 400,
         nextBtnTitle: 'Next',
         backBtnTitle: 'Back',
-        closeBtnTitle: 'Close'
+        closeBtnTitle: 'Close',
+        animated: true
       };
     }
   }]);
@@ -38699,13 +38704,13 @@ var Walkthrough = function (_React$Component) {
         { className: (0, _classnames2.default)('walkthrough', this.props.className) },
         _react2.default.createElement(
           'div',
-          { className: 'walkthrough-backdrop' },
+          { className: 'walkthrough-backdrop', onClick: this.props.onClickBackdrop },
           _react2.default.createElement(
             'div',
             { className: 'walkthrough-modal', style: modalStyle },
             _react2.default.createElement(
               'div',
-              { className: 'walkthrough-container', style: containerStyle },
+              { className: (0, _classnames2.default)('walkthrough-container', { 'animated': this.props.animated }), style: containerStyle },
               this.props.children.map(function (val, index) {
                 return _react2.default.createElement(
                   'div',

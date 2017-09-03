@@ -6,10 +6,11 @@ import PropTypes from 'prop-types'
 export default class Walkthrough extends React.Component {
   static get propTypes () {
     return {
-      onHide: PropTypes.func.isRequired,
+      className: PropTypes.string,
       width: PropTypes.number,
       height: PropTypes.number,
-      className: PropTypes.string,
+      onHide: PropTypes.func.isRequired,
+      onClickBackdrop:PropTypes.func,
       onSlide: PropTypes.func,
       nextBtnTitle: PropTypes.string,
       backBtnTitle: PropTypes.string,
@@ -101,7 +102,7 @@ export default class Walkthrough extends React.Component {
 
     return (
       <div className={cx('walkthrough', this.props.className)}>
-        <div className='walkthrough-backdrop'>
+        <div className='walkthrough-backdrop' onClick={this.props.onClickBackdrop}>
           <div className='walkthrough-modal' style={modalStyle}>
             <div className={cx('walkthrough-container', {'animated': this.props.animated})} style={containerStyle}>
               {

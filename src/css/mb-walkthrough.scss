@@ -53,10 +53,6 @@ $primary-color: #3e87f4;
     position: absolute;
     top: 0;
     left: 0;
-
-    &.animated {
-      transition: .2s;
-    }
   }
 
   .walkthrough-footer {

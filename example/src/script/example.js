@@ -22,8 +22,8 @@ class ExampleWalkthrough extends React.Component {
         nextBtnTitle='次へ'
         backBtnTitle='戻る'
         closeBtnTitle='閉じる'
-        animated={false}
         onClickBackdrop={()=>{alert('takeru')}}
+        animationDuration={1000}
         >
         <MBWalkthrough.Content>
           1

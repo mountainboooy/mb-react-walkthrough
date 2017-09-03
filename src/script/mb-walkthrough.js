@@ -15,7 +15,8 @@ export default class Walkthrough extends React.Component {
       nextBtnTitle: PropTypes.string,
       backBtnTitle: PropTypes.string,
       CloseBtntitle: PropTypes.string,
-      animated: PropTypes.bool
+      animated: PropTypes.bool,
+      animationDuration: PropTypes.number
     }
   }
 
@@ -26,7 +27,8 @@ export default class Walkthrough extends React.Component {
       nextBtnTitle: 'Next',
       backBtnTitle: 'Back',
       closeBtnTitle: 'Close',
-      animated: true
+      animated: true,
+      animationDuration: 200
     }
   }
 
@@ -96,7 +98,13 @@ export default class Walkthrough extends React.Component {
     const containerStyle = {
       transform: `translateX(${width * page * -1}px)`,
       width: `${width * amount}px`,
-      height: '100%'
+      height: '100%',
+      transition: (() => {
+        if (!this.props.animated) {
+          return '0ms'
+        }
+        return `${this.props.animationDuration}ms ease-out`
+      })()
     }
 
     const contentBoxStyle = {
@@ -116,7 +124,7 @@ export default class Walkthrough extends React.Component {
       <div className={cx('walkthrough', this.props.className)}>
         <div className='walkthrough-backdrop' onClick={this.onClickBackdrop}>
           <div className='walkthrough-modal' style={modalStyle} onClick={this.onClickModal}>
-            <div className={cx('walkthrough-container', {'animated': this.props.animated})} style={containerStyle}>
+            <div className='walkthrough-container' style={containerStyle}>
               {
                 this.props.children.map(function (val, index) {
                   return (

@@ -23,6 +23,7 @@ class ExampleWalkthrough extends React.Component {
         backBtnTitle='戻る'
         closeBtnTitle='閉じる'
         animated={false}
+        onClickBackdrop={()=>{alert('takeru')}}
         >
         <MBWalkthrough.Content>
           1

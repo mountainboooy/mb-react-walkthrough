@@ -36,7 +36,8 @@ export default class Walkthrough extends React.Component {
     bindAll(this, [
       'onClickBack',
       'onClickNext',
-      'onClickIndicator'
+      'onClickIndicator',
+      'onClickBackdrop'
     ])
 
     this.state = {
@@ -60,6 +61,12 @@ export default class Walkthrough extends React.Component {
 
   onClickIndicator (index) {
     this.updatePage(index)
+  }
+
+  onClickBackdrop () {
+    if (this.props.onClickBackdrop) {
+      this.props.onClickBackdrop()
+    }
   }
 
   updatePage (page) {
@@ -102,7 +109,7 @@ export default class Walkthrough extends React.Component {
 
     return (
       <div className={cx('walkthrough', this.props.className)}>
-        <div className='walkthrough-backdrop' onClick={this.props.onClickBackdrop}>
+        <div className='walkthrough-backdrop' onClick={this.onClickBackdrop}>
           <div className='walkthrough-modal' style={modalStyle}>
             <div className={cx('walkthrough-container', {'animated': this.props.animated})} style={containerStyle}>
               {

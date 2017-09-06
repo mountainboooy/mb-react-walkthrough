@@ -1,4 +1,3 @@
-
 $walkthrough-backdrop-color: #4a4b53;
 $walkthrough-footer-height: 100px;
 $primary-color: #3e87f4;
@@ -13,14 +12,12 @@ $primary-color: #3e87f4;
   &:focus {
     background: none;
     outline: none;
-
-
   }
 }
 
 .walkthrough-backdrop {
   top: 0;
-  right:   0;
+  right: 0;
   left: 0;
   bottom: 0;
   position: fixed;
@@ -28,7 +25,7 @@ $primary-color: #3e87f4;
   background: transparent;
 
   &.show {
-    background: rgba($walkthrough-backdrop-color, .85);
+    background: rgba($walkthrough-backdrop-color, 0.85);
   }
 
   * {
@@ -43,7 +40,7 @@ $primary-color: #3e87f4;
   text-align: center;
   overflow: hidden;
   border-radius: 3px;
-  box-shadow: 0 8px 14px rgba(#000, .2);
+  box-shadow: 0 8px 14px rgba(#000, 0.2);
 
   .walkthrough-content-box {
     float: left;
@@ -80,7 +77,9 @@ $primary-color: #3e87f4;
 
   .btn-footer {
     $btn-footer-height: 40px;
+
     @include unstyled-button;
+
     width: 95px;
     height: $btn-footer-height;
     line-height: $btn-footer-height;
@@ -97,8 +96,8 @@ $primary-color: #3e87f4;
     border-color: $primary-color;
 
     &:hover {
-      background: darken($primary-color, .5);
-      border-color: darken($primary-color, .5);
+      background: darken($primary-color, 0.5);
+      border-color: darken($primary-color, 0.5);
     }
 
     &:focus,
@@ -108,14 +107,13 @@ $primary-color: #3e87f4;
   }
 
   .btn-back {
-
     &.first-page {
       opacity: 0;
       pointer-events: none;
     }
 
     &:hover {
-      background: rbga(#000, .2);
+      background: rbga(#000, 0.2);
     }
   }
 
@@ -129,12 +127,14 @@ $primary-color: #3e87f4;
 
     > button {
       @include unstyled-button;
+
       width: 17px;
       height: 17px;
       cursor: pointer;
 
       .walkthrough-dot {
         $page-indicator-size: 7px;
+
         display: inline-block;
         width: $page-indicator-size;
         height: $page-indicator-size;

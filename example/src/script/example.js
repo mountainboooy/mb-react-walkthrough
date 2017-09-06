@@ -61,14 +61,13 @@ class ExampleWalkthrough extends React.Component {
   }
 }
 
-const testComponent = (
+const exampleComponent = (
   <div>
-    This is test Compo
     <ExampleWalkthrough />
   </div>
 )
 
 ReactDOM.render(
-  testComponent,
-  document.getElementById('test')
+  exampleComponent,
+  document.getElementById('react-root')
 )

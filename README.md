@@ -5,20 +5,23 @@ MB React Walkghrough is a simple React component to realize walkthrough UI in yo
 [![https://gyazo.com/a9d3db30a859b86f4f8c26996f9ac9c4](https://i.gyazo.com/a9d3db30a859b86f4f8c26996f9ac9c4.gif)](https://gyazo.com/a9d3db30a859b86f4f8c26996f9ac9c4)
 [![https://gyazo.com/ef39b0390ddd118a74b6df5b758a76dc](https://i.gyazo.com/ef39b0390ddd118a74b6df5b758a76dc.gif)](https://gyazo.com/ef39b0390ddd118a74b6df5b758a76dc)
 
-<br/>
+
 ## Installation
+
 ```
 npm install --save mb-react-walkthroguh
 ```
 
-<br/>
+
 ## Import css to your project
+
 ```css
 @import ./node_modules/mb-walkthrough/src/dist/css/mb-walkthrough.css
 ```
 
-<br/>
+
 ## Useage
+
 ```javascript
 import MBWalkthrough from 'mb-walkthrough'
 
@@ -33,8 +36,9 @@ import MBWalkthrough from 'mb-walkthrough'
 
 ```
 
-<br/>
+
 ## Props
+
 | Prop            | Type         | Default      | Note         |
 |:----------------|:------------:|:------------:|:------------:|
 | className       | string       |              |              |
@@ -54,8 +58,8 @@ import MBWalkthrough from 'mb-walkthrough'
 | topSpace        | number       | 100          |              |
 
 
-<br/>
 ## Development
+
 ``` 
 git clone git@github.com:mountainboooy/mb-walkthrough.git
 cd mb-walkthrough

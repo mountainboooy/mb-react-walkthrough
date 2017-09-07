@@ -16,7 +16,7 @@ export default class Walkthrough extends React.Component {
       onShow: PropTypes.func,
       nextBtnTitle: PropTypes.string,
       backBtnTitle: PropTypes.string,
-      CloseBtntitle: PropTypes.string,
+      closeBtnTitle: PropTypes.string,
       animated: PropTypes.bool,
       animationDuration: PropTypes.number,
       showBackdrop: PropTypes.bool,

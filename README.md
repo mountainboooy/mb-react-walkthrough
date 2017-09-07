@@ -35,7 +35,7 @@ import Walkthrough from 'mb-walkthrough'
     <Walkthrough.Content>
     	PAGE 2
     </Walkthrough.Content>
-</Walkthrough>
+</Walkthrough> 
 
 ```
 

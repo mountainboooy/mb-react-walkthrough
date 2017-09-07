@@ -47,6 +47,16 @@ import MBWalkthrough from 'mb-walkthrough'
 | onHide          | func         |              | Required     |
 | onClickBackdrop | func         |              |              |
 | onSlide         | func         |              |              |
+| onShow          | func         |              |              |
+| nextBtnTitle    | string       | Nex          |              |
+| backBtnTitle    | string       | Back         |              |
+| closeBtnTitle   | string       | Close        |              |
+| animated        | bool         | true         |              |
+| animationDuration| number      | 200          |              |
+| showBackdrop    | bool         | true         |              |
+| showIndicator   | bool         | true         |              |
+| topSpace        | number       | 100          |              |
+
 
 ## Development
 ``` 

@@ -29,7 +29,7 @@ npm install --save mb-react-walkthrough
 import Walkthrough from 'mb-walkthrough'
 
 <Walkthrough onHide={()=>{this.setState({show: false})}}>
-	<Walkthrough.Content>
+    <Walkthrough.Content>
     	PAGE 1
     </Walkthrough.Content>
     <Walkthrough.Content>

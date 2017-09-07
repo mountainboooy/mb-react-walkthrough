@@ -6,6 +6,7 @@ MB React Walkthrough is a simple React component to realize walkthrough UI in yo
 [![https://gyazo.com/ef39b0390ddd118a74b6df5b758a76dc](https://i.gyazo.com/ef39b0390ddd118a74b6df5b758a76dc.gif)](https://gyazo.com/ef39b0390ddd118a74b6df5b758a76dc)
 
 <br/>
+
 ## Installation
 
 ```
@@ -13,6 +14,7 @@ npm install --save mb-react-walkthrough
 ```
 
 <br/>
+
 ## Import css to your project
 
 ```css
@@ -20,6 +22,7 @@ npm install --save mb-react-walkthrough
 ```
 
 <br/>
+
 ## Useage
 
 ```javascript
@@ -37,6 +40,7 @@ import Walkthrough from 'mb-walkthrough'
 ```
 
 <br/>
+
 ## Props
 
 | Prop            | Type         | Default      | Note         |
@@ -59,6 +63,7 @@ import Walkthrough from 'mb-walkthrough'
 
 
 <br/>
+
 ## Development
 
 ``` 

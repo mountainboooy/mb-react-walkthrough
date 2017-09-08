@@ -1,7 +1,7 @@
 # MB React Walkthrough
 
 MB React Walkthrough is a simple React component to realize walkthrough UI in your application. With this UI, You can add tutorials, onboardings and short storires very easliy.
- 
+
 [![https://gyazo.com/8451169dc63303bdc655a30363aafe45](https://i.gyazo.com/8451169dc63303bdc655a30363aafe45.gif)](https://gyazo.com/8451169dc63303bdc655a30363aafe45)
 [![https://gyazo.com/4adb54887eddf9bd8c51a796da57badc](https://i.gyazo.com/4adb54887eddf9bd8c51a796da57badc.gif)](https://gyazo.com/4adb54887eddf9bd8c51a796da57badc)
 
@@ -18,7 +18,7 @@ npm install --save mb-react-walkthrough
 ## Import css to your project
 
 ```css
-@import './node_modules/mb-walkthrough/src/dist/css/mb-walkthrough'
+@import './node_modules/mb-react-walkthrough/src/dist/css/mb-react-walkthrough'
 ```
 
 <br/>
@@ -26,7 +26,7 @@ npm install --save mb-react-walkthrough
 ## Useage
 
 ```javascript
-import Walkthrough from 'mb-walkthrough'
+import Walkthrough from 'mb-react-walkthrough'
 
 <Walkthrough onHide={()=>{this.setState({show: false})}}>
     <Walkthrough.Content>
@@ -35,7 +35,7 @@ import Walkthrough from 'mb-walkthrough'
     <Walkthrough.Content>
     	PAGE 2
     </Walkthrough.Content>
-</Walkthrough> 
+</Walkthrough>
 
 ```
 
@@ -66,9 +66,9 @@ import Walkthrough from 'mb-walkthrough'
 
 ## Development
 
-``` 
-git clone git@github.com:mountainboooy/mb-walkthrough.git
-cd mb-walkthrough
+```
+git clone git@github.com:mountainboooy/mb-react-walkthrough.git
+cd mb-react-walkthrough
 npm install
 npm run:watch
 ```

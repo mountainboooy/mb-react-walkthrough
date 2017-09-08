@@ -15,7 +15,7 @@ npm install --save mb-react-walkthrough
 
 <br/>
 
-## Import css to your project
+#### Import css to your project
 
 ```css
 @import './node_modules/mb-walkthrough/src/dist/css/mb-walkthrough'

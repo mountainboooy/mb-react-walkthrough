@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MBWalkthrough from 'mb-walkthrough'
+import MBWalkthrough from 'mb-react-walkthrough'
 
 class ExampleWalkthrough extends React.Component {
   constructor (props) {

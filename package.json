@@ -1,5 +1,5 @@
 {
-  "name": "mb-walkthrough",
+  "name": "mb-react-walkthrough",
   "version": "0.0.1",
   "description": "",
   "main": "./src/dist/index.js",
@@ -9,19 +9,19 @@
     "test:stylelint": "./node_modules/.bin/stylelint ./src/css/**/*.scss --config ./config/stylelint.json",
     "build": "./node_modules/.bin/run-s build:**",
     "build:babel": "./node_modules/.bin/babel --plugins transform-react-jsx ./src/script --out-dir ./src/dist --presets es2015",
-    "build:css": "./node_modules/.bin/node-sass src/css/mb-walkthrough.scss src/dist/css/mb-walkthrough.css",
+    "build:css": "./node_modules/.bin/node-sass src/css/mb-react-walkthrough.scss src/dist/css/mb-react-walkthrough.css",
     "watch": "./node_modules/.bin/watch 'npm run build' ./src/script/ ./src/css/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mountainboooy/mb-walkthrough.git"
+    "url": "git+https://github.com/mountainboooy/mb-react-walkthrough.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mountainboooy/mb-walkthrough/issues"
+    "url": "https://github.com/mountainboooy/mb-react-walkthrough/issues"
   },
-  "homepage": "https://github.com/mountainboooy/mb-walkthrough#readme",
+  "homepage": "https://github.com/mountainboooy/mb-react-walkthrough#readme",
   "dependencies": {
     "bowser": "^1.7.3",
     "lodash": "^4.17.4",

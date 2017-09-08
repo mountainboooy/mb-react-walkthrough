@@ -1,3 +1,3 @@
-import MBWalkthrough from './mb-walkthrough'
+import Walkthrough from './mb-react-walkthrough'
 
-export default MBWalkthrough
+export default Walkthrough

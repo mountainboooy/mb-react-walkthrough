@@ -18,7 +18,7 @@
     "url": "git+https://github.com/mountainboooy/mb-react-walkthrough.git"
   },
   "author": "Takeru Yoshihara",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mountainboooy/mb-react-walkthrough/issues"
   },

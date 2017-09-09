@@ -1,7 +1,8 @@
 {
   "name": "mb-react-walkthrough",
   "version": "0.1.0",
-  "description": "",
+  "description": "MB React Walkthrough is a simple React component to realize walkthrough UI in your application. With this UI, You can add tutorials, onboardings and short storires very easliy.",
+  "keywords": "react, walkthroguh, tutorial, modal, onboarding, ui, design"
   "main": "./src/dist/index.js",
   "scripts": {
     "test": "./node_modules/.bin/run-s test:**",

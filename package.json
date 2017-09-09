@@ -1,6 +1,6 @@
 {
   "name": "mb-react-walkthrough",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "./src/dist/index.js",
   "scripts": {

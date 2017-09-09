@@ -1,4 +1,7 @@
 # MB React Walkthrough
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![npm](https://img.shields.io/npm/dt/mb-react-walkthrough.svg)]()
+[![npm](https://img.shields.io/npm/dm/mb-react-walkthrough.svg)]()
 
 MB React Walkthrough is a simple React component to realize walkthrough UI in your application. With this UI, You can add tutorials, onboardings and short storires very easliy.
 
